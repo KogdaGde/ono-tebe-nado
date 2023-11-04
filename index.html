@@ -6,23 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-  <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./fonts/fonts.css" />
   <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
+  <div class="container">
   <header class="content-section header">
     <nav class="header__menu">
       <ul class="header__links-list">
-        <li class="header__links-list-item_no-bullit">
-          <a class="header__menu-link">главная</a>
+        <li class="header__links-list">
+          <a class="header__menu-no-link" href="#0">главная</a>
         </li>
         <li class="header__menu-list">
-          <a class="header__menu-link" href="#0">посмотреть лоты</a>
+          <a class="header__menu-link" href="#lots">посмотреть лоты</a>
         </li>
         <li class="header__menu-list">
-          <a class="header__menu-link" href="#0">об аукционе</a>
+          <a class="header__menu-link" href="#about">об аукционе</a>
         </li>
       </ul>
     </nav>
@@ -39,9 +40,9 @@
       </p>
     </address>
   </header>
+  <main class="main">
   <section class="cover">
     <div class="overlay"></div>
-    <div class="cover-container">
       <h1 class="cover-title">
         <span class="aligned-text">
           <span class="letter-spacing-extended">он</span>
@@ -49,16 +50,15 @@
         </span>
 
         <span class="aligned-text-center">
-          <span class="letter-spacing-extended">теб</span>
-          <span class="no-letter-spacing">е</span>
+          <span class="letter-spacing-extended-center">теб</span>
+          <span class="no-letter-spacing-center">е</span>
         </span>
 
         <span class="aligned-text-right">
-          <span class="letter-spacing-extended">н</span>
-          <span class="no-letter-spacing">адо</span>
+          <span class="letter-spacing-extended-right">н</span>
+          <span class="no-letter-spacing-right">адо</span>
         </span>
       </h1>
-    </div>
     <div class="cover-description">
       <p class="cover_description-text">аукцион вещей, в которые никто не верил</p>
       <button class="bet-button">сделать ставку</button>
@@ -114,9 +114,9 @@
     </a>
   </section>
   <section class="about" id="about">
-    <a class="about-logo">
+    <div class="about-logo">
       <img class="about-logo-image" src="images/logo-white.svg" alt="Лого(черное)">
-    </a>
+    </div>
     <div class="about-column">
       <h2 class="about-title">Об аукционе</h2>
       <div>
@@ -131,6 +131,7 @@
       </div>
     </div>
   </section>
+  </main>
   <footer class="footer">
     <address class="footer-address">
       <a href="tel:++99995555555">+9 999 555 5555</a>
@@ -156,7 +157,6 @@
         </li>
       </ul>
     </nav>
-    <div class="footer-social-list">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a href="#0">
@@ -174,8 +174,8 @@
           </a>
         </li>
       </ul>
-    </div>
   </footer>
+  </div>
 </body>
 
 </html>
