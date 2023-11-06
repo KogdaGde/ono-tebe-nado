@@ -87,7 +87,7 @@
 .cover-title {
   display: flex;
   flex-direction: column;
-  padding: 165px 50px 237px 50px;
+  padding: 165px 50px 135px 50px;
   z-index: 2;
   font-weight: bold;
   color: #fff;
@@ -102,6 +102,8 @@
 .aligned-text {
   display: flex;
   justify-content: flex-start;
+  position: relative;
+  top: 5px;
 }
 
 .letter-spacing-start {
@@ -110,8 +112,10 @@
 }
 
 .aligned-text-center {
+  position: relative;
   display: flex;
   justify-content: center;
+  top: 8px;
 }
 
 .letter-spacing-center {
@@ -142,7 +146,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: -100px 50px 50px 0;
+  padding: 0 50px 50px 0;
 }
 
 .cover_description-text {
@@ -274,10 +278,10 @@
 }
 
 .about {
-  position: relative;
-  margin: 180px 50px 90px 50px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 430px 1fr;
+  align-items: start;
+  gap: 0 75px;
 }
 
 .about-logo {
@@ -287,7 +291,7 @@
   align-items: center;
   width: 240px;
   height: 240px;
-  margin: 0 120px 248px 95px;
+  margin: 0 145px;
   border-radius: 120px;
   background-color: #000;
 }
