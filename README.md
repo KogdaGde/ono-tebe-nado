@@ -92,6 +92,19 @@ ALTER TABLE ONLY public.events
 ALTER TABLE ONLY public.wells
  ADD CONSTRAINT wells_pk PRIMARY KEY (well_id);
 
+
+
+select id, well_name, brigade_name, dateend from (
+select e.id, w.well_name, b.brigade_name, e.dateend_fact, e.dateend_plan, case when plan_fact ='1' then e.dateend_fact else e.dateend_plan end dateend
+from wells as w 
+left join brigades as b 
+on w.brigade_id = b.brigade_id::integer
+left join events as e
+on e.well_id::integer = w.well_id
+) as a
+where dateend::date between '2023-01-01' and '2023-04-01'
+order by dateend;
+
 — Completed on 2023-06-15 17:43:55 MSK
 
 --
